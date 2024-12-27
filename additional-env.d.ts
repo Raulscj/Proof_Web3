@@ -7,6 +7,10 @@ declare global {
       NEXTAUTH_SECRET: string;
 
       SIWE_DOMAIN: string;
+      /**
+       * Esto significa que no tendremos que usar algo como process.env.
+       * NEXT_PUBLIC_GREETING_CONTRACT as 0x${string} en nuestro código real.
+       */
       NEXT_PUBLIC_GREETING_CONTRACT: `0x${string}`;
       NEXT_PUBLIC_NFT_CONTRACT: `0x${string}`;
     }
